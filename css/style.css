@@ -207,7 +207,6 @@ body {
 }
 
 .banner-slides {
-    background: yellow;
     flex-grow: 1;
     position: relative;
 }
@@ -220,15 +219,33 @@ body {
     height: 100%;
     opacity: 0;
     transition: 1s;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
 }
 
 .banner-slide-active {
     opacity: 1;
     z-index: 1;
 }
-
-.banner-slide:first-child {
-
+.banner-slide-content {
+    text-align: center;
+    padding: 50px;
+}
+.banner-slide-header {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner-slide-header span {
+    font-weight: 700;
+    color: var(--color);
+}
+.banner-slide-text {
+    line-height: 1.5;
+}
+.banner-slide-button {
+    font-size: 24px;
+    padding: 10px 30px;
 }
 
 /* -------------------------- */
