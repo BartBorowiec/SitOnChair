@@ -255,6 +255,7 @@ body {
 .form {
     display: flex;
     justify-content: space-between;
+    padding: 30px 0 70px;
 }
 .form-left {
     width: 635px;
@@ -339,8 +340,77 @@ textarea.form-control{
 
 .main-prices {
     background: #eee;
+    padding: 30px 0 70px;
+}
+
+.prices-box {
+    border: 2px solid #DDD;
+    border-radius: 2px;
+    text-align: center;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: #DDD;
+    height: 100%;
+    padding-bottom: 60px;
+}
+.prices-title {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: var(--color2);
+}
+.prices-price {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #DDD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
 
 }
+.prices-price .price-big {
+    font-size: 40px;
+}
+.prices-price sup {
+    font-size: 15px;
+    vertical-align: super;
+}
+.prices-list {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    color: #666;
+}
+
+.prices-list li {
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    background-color: #E5E5E5;
+}
+.prices-list li:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.prices-btn {
+    margin: 20px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* -------------------------- */
+/* main articles */
+/* -------------------------- */
+
 
 .main-articles {
     padding: 30px 0 70px;
