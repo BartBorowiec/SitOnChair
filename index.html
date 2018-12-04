@@ -6,8 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div class="page-header">
@@ -36,26 +35,45 @@
 
 <section class="main-banner-bg">
     <div class="container">
-
         <div class="banner">
-            <button class="banner-prev">&lt;</button>
-            <button class="banner-next">&gt;</button>
-            <div class="banner-slides">
-                <div class="banner-slide banner-slide-active">
-                    <img src="images/black_chair.png" class="banner-slide-image">
-                    <div class="banner-slide-content">
-                        <h1 class="banner-slide-header">
+            <button class="banner__prev">&lt;</button>
+            <button class="banner__next">&gt;</button>
+            <div class="banner__slides">
+                <div class="banner__slide banner__slide--active">
+                    <img src="images/black_chair.png" class="banner__slide-image">
+                    <div class="banner__slide-content">
+                        <h1 class="banner__slide-header">
                             Sit <span>on</span> our <span>chair</span>
                         </h1>
-                        <p class="banner-slide-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                        <p class="banner__slide-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
                             cumque ducimus et laboriosam, libero magnam minus molestiae, officiis perspiciatis
                             recusandae sunt veniam vitae. Adipisci error iste nesciunt nostrum officiis velit?</p>
-                        <a href="" class="btn banner-slide-button">Zobacz więcej</a>
+                        <a href="" class="btn banner__slide-button">Zobacz więcej</a>
                     </div>
                 </div>
-                <div class="banner-slide">
+                <div class="banner__slide">
+                    <img src="images/orange_chair.png" class="banner__slide-image">
+                    <div class="banner__slide-content">
+                        <h1 class="banner__slide-header">
+                            Sit <span>on</span> our <span>chair</span>
+                        </h1>
+                        <p class="banner__slide-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                            cumque ducimus et laboriosam, libero magnam minus molestiae, officiis perspiciatis
+                            recusandae sunt veniam vitae. Adipisci error iste nesciunt nostrum officiis velit?</p>
+                        <a href="" class="btn banner__slide-button">Zobacz więcej</a>
+                    </div>
                 </div>
-                <div class="banner-slide">
+                <div class="banner__slide">
+                    <img src="images/red_chair.png" class="banner__slide-image">
+                    <div class="banner__slide-content">
+                        <h1 class="banner__slide-header">
+                            Sit <span>on</span> our <span>chair</span>
+                        </h1>
+                        <p class="banner__slide-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                            cumque ducimus et laboriosam, libero magnam minus molestiae, officiis perspiciatis
+                            recusandae sunt veniam vitae. Adipisci error iste nesciunt nostrum officiis velit?</p>
+                        <a href="" class="btn banner__slide-button">Zobacz więcej</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -65,14 +83,13 @@
 
 <section class="main-articles">
     <div class="container">
-
         <div class="row">
             <div class="col-1-3">
 
                 <article class="article-box">
-                    <img src="./images/box1_img.jpg" alt="" class="article-box-img">
-                    <div class="article-box-bar">
-                        <h3 class="article-box-title">
+                    <img src="./images/box1_img.jpg" alt="" class="article-box__img">
+                    <div class="article-box__bar">
+                        <h3 class="article-box__title">
                             Chair CLAIR
                         </h3>
                     </div>
@@ -82,9 +99,9 @@
 
             <div class="col-1-3">
                 <article class="article-box">
-                    <img src="./images/box2_img.jpg" alt="" class="article-box-img">
-                    <div class="article-box-bar">
-                        <h3 class="article-box-title">
+                    <img src="./images/box2_img.jpg" alt="" class="article-box__img">
+                    <div class="article-box__bar">
+                        <h3 class="article-box__title">
                             Chair MARGARITA
                         </h3>
                     </div>
@@ -92,10 +109,10 @@
             </div>
             <div class="col-1-3">
                 <article class="article-box-text">
-                    <h3 class="article-box-title">
+                    <h3 class="article-box__title">
                         Finds all inputs
                     </h3>
-                    <div class="article-box-content">
+                    <div class="article-box__content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolor nihil optio
                             perferendis. Alias architecto dolor eos eveniet id illum minus molestiae pariatur quaerat
                             quia sint, suscipit voluptates! Architecto, ducimus!</p>
@@ -119,53 +136,53 @@
         <div class="row">
             <div class="col-1-3">
                 <div class="prices-box">
-                    <h2 class="prices-title">
+                    <h2 class="prices-box__title">
                         Basic plan
                     </h2>
-                    <div class="prices-price">
+                    <div class="prices-box__price">
                         <span class="price-big">85<sup>99</sup></span>
                         <span>pln/msc</span>
                     </div>
-                    <ul class="prices-list">
+                    <ul class="prices-box__list">
                         <li>Zakup towaru + dowóz</li>
                         <li>Serwis</li>
                     </ul>
-                    <button class="btn prices-btn">Dołącz</button>
+                    <button class="btn prices-box__btn">Dołącz</button>
                 </div>
             </div>
             <div class="col-1-3">
-                <div class="prices-box">
-                    <h2 class="prices-title">
+                <div class="prices-box prices-box--recommended">
+                    <h2 class="prices-box__title">
                         Standard plan
                     </h2>
-                    <div class="prices-price">
+                    <div class="prices-box__price">
                         <span class="price-big">95<sup>99</sup></span>
                         <span>pln/msc</span>
                     </div>
-                    <ul class="prices-list">
+                    <ul class="prices-box__list">
                         <li>Zakup towaru + dowóz</li>
                         <li>Serwis</li>
                         <li>Gwarancja 5 lat</li>
                     </ul>
-                    <button class="btn prices-btn">Dołącz</button>
+                    <button class="btn prices-box__btn">Dołącz</button>
                 </div>
             </div>
             <div class="col-1-3">
                 <div class="prices-box">
-                    <h2 class="prices-title">
+                    <h2 class="prices-box__title">
                         Advance plan
                     </h2>
-                    <div class="prices-price">
+                    <div class="prices-box__price">
                         <span class="price-big">211<sup>00</sup></span>
                         <span>pln/msc</span>
                     </div>
-                    <ul class="prices-list">
+                    <ul class="prices-box__list">
                         <li>Zakup towaru + dowóz</li>
                         <li>Serwis</li>
                         <li>Gwarancja 5 lat</li>
                         <li>Porady projektanta</li>
                     </ul>
-                    <button class="btn prices-btn">Dołącz</button>
+                    <button class="btn prices-box__btn">Dołącz</button>
                 </div>
             </div>
         </div>
@@ -174,43 +191,119 @@
 
 </section>
 
+<section class="main-calculator-bg">
+    <div class="container">
+        <section class="calculator">
+            <section class="calculator-drop-lists">
+                <header>
+                    <h3 class="section-title">SKOMPONUJ SWOJE KRZESŁO</h3>
+                </header>
+
+                <div class="calculator__form">
+                    <div class="calculator__drop-list">
+                        <span class="calculator__list-label">Wybierz rodzaj</span>
+                        <span class="calculator__list-arrow"></span>
+                        <ul class="calculator__list-panel">
+                            <li>Clair</li>
+                            <li>Margarita</li>
+                            <li>Selena</li>
+                        </ul>
+                    </div>
+
+                    <div class="calculator__drop-list">
+                        <span class="calculator__list-label">Wybierz kolor</span>
+                        <span class="calculator__list-arrow"></span>
+                        <ul class="calculator__list-panel">
+                            <li>Czerwony</li>
+                            <li>Czarny</li>
+                            <li>Pomarańczowy</li>
+                        </ul>
+                    </div>
+
+                    <div class="calculator__drop-list">
+                        <span class="calculator__list-label">Wybierz materiał</span>
+                        <span class="calculator__list-arrow"></span>
+                        <ul class="calculator__list-panel">
+                            <li>Tkanina</li>
+                            <li>Skóra</li>
+                        </ul>
+                    </div>
+
+                    <label class="calculator__checkbox">
+                        <input type="checkbox" name="regulations">
+                        <span>Transport</span>
+                    </label>
+
+                </div>
+            </section>
+
+            <section class="calculator-image">
+                <img src="images/red_chair.png">
+            </section>
+
+            <section class="calculator-summary">
+                <header>
+                    <h3 class="section-title">PODSUMOWANIE</h3>
+                </header>
+
+                <div class="summary-panel">
+                    <div class="panel-left">
+                        <h4 class="title">Twój fotel</h4>
+                        <span class="color"></span>
+                        <span class="pattern"></span>
+                        <span class="transport"></span>
+                    </div>
+                    <div class="panel-right">
+                        <h4 class="title value"></h4>
+                        <span class="color value"></span>
+                        <span class="pattern value"></span>
+                        <span class="transport value"></span>
+                    </div>
+                    <div class="sum-label">SUMA</div>
+                    <div class="sum"><strong></strong></div>
+                </div>
+                <a href="" class="btn calculator__btn">Zamawiam</a>
+            </section>
+        </section>
+    </div>
+</section>
 <section class="main-contact">
     <div class="container">
         <h2 class="section-title">
             Kontakt
         </h2>
 
-        <form class="form">
-            <div class="form-left">
+        <form class="contact-form">
+            <div class="contact-form-left">
 
-                <div class="form-row">
+                <div class="contact-form__row">
                     <label for="name" class="visuallyhidden">Imię</label>
-                    <input type="text" id="name" class="form-control" name="name" placeholder="Imię">
+                    <input type="text" id="name" class="contact-form__control" name="name" placeholder="Imię">
                 </div>
 
-                <div class="form-row">
+                <div class="contact-form__row">
                     <label for="email" class="visuallyhidden">Email</label>
-                    <input type="email" id="email" class="form-control" name="email" placeholder="email">
+                    <input type="email" id="email" class="contact-form__control" name="email" placeholder="email">
                 </div>
 
-                <div class="form-row">
+                <div class="contact-form__row">
                     <label for="msg" class="visuallyhidden"></label>
-                    <textarea class="form-control" id="msg" name="msg" placeholder="Wiadomość"></textarea>
+                    <textarea class="contact-form__control" id="msg" name="msg" placeholder="Wiadomość"></textarea>
                 </div>
 
             </div>
-            <div class="form-right">
-                <div class="form-img"></div>
-                <div class="form-row">
-                    <label class="form-checkbox">
+            <div class="contact-form-right">
+                <div class="contact-form__img"></div>
+                <div class="contact-form__row">
+                    <label class="contact-form__checkbox">
                         <input type="checkbox" name="regulations">
                         <span>
-                                Zgadzam się na przetwarzanie danych osobowych
-                            </span>
+                            Zgadzam się na przetwarzanie danych osobowych
+                        </span>
                     </label>
                 </div>
-                <div class="form-row">
-                    <button type="submit" class="btn form-submit">
+                <div class="contact-form__row">
+                    <button type="submit" class="btn contact-form__submit">
                         Wyślij
                     </button>
                 </div>
@@ -225,9 +318,11 @@
             Copyright 2018 | All rights reserved. - Sit On Chair
         </div>
         <div class="footer-links">
-            <img src="images/flickr.png"><img src="images/pinterest.png"><img src="images/vimeo.png"><img src="images/twitter.png">Sit <span>on</span> chair</div>
+            <img src="images/flickr.png"><img src="images/pinterest.png"><img src="images/vimeo.png"><img
+                src="images/twitter.png">Sit <span>on</span> chair
+        </div>
     </div>
 </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>

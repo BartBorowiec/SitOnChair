@@ -1,0 +1,106 @@
+.main-calculator-bg {
+  background-color: #f9f9f9;
+  padding: 30px 0;
+}
+.calculator-image {
+  align-self: center;
+}
+.calculator {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__drop-list {
+    border: 1px solid $color-main;
+    width: 300px;
+    height: 38px;
+    background-color: white;
+    margin: 15px 0;
+    padding: 4px 10px;
+    font-size: 26px;
+    color: #e2e2e2;
+    position: relative;
+  }
+
+  &__list-arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #24baa0;
+    display:block;
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  &__list-panel {
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 288px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    list-style: none;
+    margin: 0;
+    left: 0;
+    z-index: 2;
+    position: absolute;
+    top: 54px;
+    display:none;
+  }
+  &__list-panel li {
+    margin-top:10px;
+    cursor: pointer;
+    color: #585858;
+  }
+  &__checkbox {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: #aaa;
+    border-radius: 1px;
+  }
+
+  &__checkbox input{
+    width: 45px;
+    height: 45px;
+    border: 1px solid $color-main;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  &__checkbox input:checked {
+    background: url("../images/form_ok.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 90%;
+  }
+  &__btn {
+    margin: 5px auto;
+    padding: 10px 40px;
+  }
+}
+.calculator-summary .section-title {
+  text-align: right;
+}
+.panel-left {
+  display: inline-block;
+  width: 185px;
+  height: 100%;
+  border-right: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+.panel-right {
+  display: inline-block;
+  width: 100px;
+  height: 100%;
+  border-bottom: 1px solid #e7e7e7;
+}

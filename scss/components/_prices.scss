@@ -1,0 +1,135 @@
+/* -------------------------- */
+/* main prices */
+/* -------------------------- */
+
+.main-prices {
+  background: #eee;
+  padding: 30px 0 70px;
+}
+.prices-box {
+  border: 2px solid #DDD;
+  border-radius: 2px;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: #DDD;
+  height: 100%;
+  padding: 20px 0;
+  margin-top: 50px;
+  &:before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid #DDD;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -38px;
+  }
+  &:after {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-color: #DDD;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -24px;
+  }
+
+
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: $color-main;
+  }
+  &__price {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #DDD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 800;
+
+  }
+  &__price .price-big {
+    font-size: 40px;
+  }
+  &__price sup {
+    font-size: 15px;
+    vertical-align: super;
+  }
+  &__list {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    color: #666;
+  }
+
+  &__list li {
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    background-color: #E5E5E5;
+  }
+  &__list li:nth-child(even) {
+    background-color: #f3f3f3;
+  }
+
+  &__btn {
+    margin: 20px 0;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.prices-box--recommended {
+  background-color: $color-main;
+  border-color: $color-main;
+  &:before {
+    border-color: $color-main;
+    background-color: $color-main;
+  }
+  &:after {
+    background-color: white;
+  }
+
+  .prices-box__title {
+    color: white;
+  }
+  .prices-box__price {
+    color: $color-main;
+    border-color: $color-main;
+    background-color: white;
+  }
+  .prices-box__list li:nth-child(odd) {
+    background-color: white;
+  }
+  .prices-box__btn {
+    background-color: white;
+    color: $color-main;
+    &:hover {
+      background-color: #E5E5E5;
+    }
+  }
+}
+
+
+
+
+
