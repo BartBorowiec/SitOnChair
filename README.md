@@ -1,3 +1,3 @@
 # SitOnChair
-SitOnChair to projekt strony dla fikcyjnego internetowego sklepu z krzesłami, który wykonałem w ramach nauki w Coders Lab.
-Korzystałem przy tym z SCSSa i Gulpa. Prace nad tym projektem wciąż trwają.
+SitOnChair is a web page design for a fictional online shop offering chairs. I made it during Coders Lab bootcamp.
+I used SASS (SCSS) and Gulp. It's still WIP.
